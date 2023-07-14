@@ -1,0 +1,24 @@
+{
+  "name": "slotframework",
+  "version": "0.0.0",
+  "description": "a simple slot framework",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.config.dev.js --default",
+    "test": "webpack --mode development --config webpack.config.dev.js",
+    "build": "webpack --mode production --config webpack.config.prod.js",
+    "buildBoth": "webpack --mode production --config webpack.config.prod.js && uglifyjs ./dist/honeypot.js -c -m -o ./dist/honeypot.min.js"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "file-loader": "6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "standard-version": "9.5.0",
+    "webpack": "^5.88.1",
+    "webpack-bundle-analyzer": "^4.7.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "pixi.js": "5.3.10"
+  }
+}
